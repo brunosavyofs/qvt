@@ -2,23 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_sending"
+        android:id="@+id/navigation_envio"
         android:icon="@android:drawable/ic_menu_upload"
         android:title="@string/title_sending" />
 
     <item
-        android:id="@+id/navigation_profile"
+        android:id="@+id/navigation_meusdados"
         android:icon="@android:drawable/ic_menu_my_calendar"
         android:title="@string/title_profile" />
 
     <item
-        android:id="@+id/navigation_news"
+        android:id="@+id/navigation_noticias"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_news" />
-
-    <item
-        android:id="@+id/navigation_about"
-        android:icon="@android:drawable/ic_dialog_info"
-        android:title="@string/title_about" />
 
 </menu>

@@ -8,7 +8,6 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class TelaPrincipal extends AppCompatActivity {
 
@@ -42,11 +41,14 @@ public class TelaPrincipal extends AppCompatActivity {
         item.setChecked(true);
 
         switch (item.getItemId()) {
-            case R.id.navigation_sending:
+            case R.id.navigation_envio:
                 pushFragment(new EnvioFragment());
                 break;
-            case R.id.navigation_profile:
+            case R.id.navigation_meusdados:
                 pushFragment(new MeusDadosFragment());
+                break;
+            case R.id.navigation_noticias:
+                pushFragment(new NoticiasFragment());
                 break;
         }
     }
