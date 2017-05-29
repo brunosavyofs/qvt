@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QVT</string>
+    <string name="title_sending">Envio</string>
+    <string name="title_profile">Meus Dados</string>
+    <string name="title_news">Notícias</string>
+    <string name="title_about">Sobre</string>
+</resources>
