@@ -14,7 +14,7 @@ import com.catolica.qvt.qvt.R;
  * Created by bruno on 28/05/17.
  */
 
-public class MeusDadosFragment extends Fragment {
+public class MeusDadosFragment extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
