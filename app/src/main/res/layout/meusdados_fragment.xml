@@ -13,8 +13,9 @@
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/title_profile"
         android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="@color/colorPrimary" />
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView"

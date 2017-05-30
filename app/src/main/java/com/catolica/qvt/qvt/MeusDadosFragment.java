@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.catolica.qvt.qvt.R;
+
 
 /**
  * Created by bruno on 28/05/17.
