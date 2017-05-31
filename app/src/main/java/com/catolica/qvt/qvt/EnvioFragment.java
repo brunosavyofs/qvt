@@ -33,6 +33,8 @@ public class EnvioFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Log.d("teste", "teste");
+                Intent intent = new Intent(getActivity(), FotoDetalhes.class);
+                startActivity(intent);
             }
         });
 
