@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Foto"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:id="@+id/imageButton"
+            android:layout_marginStart="26dp"
+            android:layout_below="@+id/message"
+            android:layout_alignStart="@+id/message" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:id="@+id/imageButton2"
+            android:layout_marginStart="13dp"
+            android:layout_below="@+id/message"
+            android:layout_toEndOf="@+id/imageButton" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:id="@+id/imageButton3"
+            android:layout_marginStart="13dp"
+            android:layout_below="@+id/message"
+            android:layout_toEndOf="@+id/imageButton2" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@drawable/border"
+            android:id="@+id/imageButton4"
+            android:layout_marginStart="13dp"
+            android:layout_below="@+id/message"
+            android:layout_toEndOf="@+id/imageButton3" />
+
+
+        <TextView
+            android:text="Autoriza Identificação:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/imageButton"
+            android:layout_marginTop="19dp"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkBox"
+            android:checked="true"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toStartOf="@+id/imageButton3" />
+
+        <TextView
+            android:text="Assunto:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/editText3"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Comentário:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/editText1"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Região:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/editText1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner1"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Endereço:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/spinner1"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText6"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Quando Ocorreu:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/editText6"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:id="@+id/editText8"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enviar"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
+            android:layout_alignTop="@+id/cancelar"
+            android:layout_alignEnd="@+id/checkBox"
+            android:layout_marginEnd="20dp" />
+
+        <Button
+            android:text="Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelar"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/editText8"
+            android:layout_alignEnd="@+id/imageButton4"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="12dp" />
+
+    </RelativeLayout>
+</RelativeLayout>
