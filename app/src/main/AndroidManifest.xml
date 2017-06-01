@@ -20,7 +20,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FotoDetalhes"></activity>
+        <activity android:name=".FotoDetalhes"
+            android:label="Informações">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.catolica.qvt.qvt.TelaPrincipal">
+            </meta-data>
+        </activity>
     </application>
 
 </manifest>

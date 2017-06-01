@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.Toolbar;
 
 import com.catolica.qvt.qvt.noticias.NoticiasFragment;
 
@@ -36,6 +37,10 @@ public class TelaPrincipal extends AppCompatActivity {
 
         // seleciona fragmento default
         selectFragment(navigation.getMenu().getItem(0));
+
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
+//        getSupportActionBar().setIcon(R.drawable.ic_question_mark);
     }
 
     protected void selectFragment(MenuItem item) {
