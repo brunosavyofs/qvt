@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="regioes">
+        <item>Palmas</item>
+        <item>Araguaína</item>
+        <item>Gurupi</item>
+    </string-array>
+</resources>
