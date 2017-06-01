@@ -152,7 +152,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView5" />
+                android:layout_below="@+id/textView5"
+                android:entries="@array/regioes" />
 
             <TextView
                 android:id="@+id/textView6"
