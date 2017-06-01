@@ -15,25 +15,12 @@
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/message"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="16dp"
-                android:text="Foto"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="4dp">
 
                 <ImageButton
                     android:id="@+id/imageButton3"
@@ -210,7 +197,7 @@
                     android:layout_weight="0"
                     android:background="@color/colorPrimary"
                     android:text="Enviar"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/colorAccent" />
 
                 <Button
                     android:id="@+id/cancelar"
@@ -224,7 +211,7 @@
                     android:layout_weight="0"
                     android:background="@color/colorPrimary"
                     android:text="Cancelar"
-                    android:textColor="@color/colorPrimaryDark" />
+                    android:textColor="@color/colorAccent" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

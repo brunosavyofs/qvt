@@ -3,6 +3,7 @@ package com.catolica.qvt.qvt.noticias;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class NoticiasFragment extends Fragment {
 
         AdapterNoticia adapter = new AdapterNoticia(getNoticias(), getActivity(), R.layout.lista_noticias, R.id.titulo_noticia, R.id.texto_noticia);
         listaNoticias.setAdapter(adapter);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Notícias");
 
         return rootView;
     }
