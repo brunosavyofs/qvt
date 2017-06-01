@@ -27,6 +27,13 @@
                 android:value="com.catolica.qvt.qvt.TelaPrincipal">
             </meta-data>
         </activity>
+        <activity android:name=".TelaComentario"
+            android:label="Comentário">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.catolica.qvt.qvt.TelaPrincipal">
+            </meta-data>
+        </activity>
     </application>
 
 </manifest>

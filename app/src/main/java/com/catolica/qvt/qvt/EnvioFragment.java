@@ -3,15 +3,12 @@ package com.catolica.qvt.qvt;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
-import com.catolica.qvt.qvt.R;
 
 
 /**
@@ -21,6 +18,7 @@ import com.catolica.qvt.qvt.R;
 public class EnvioFragment extends Fragment {
 
     private Button botaoFoto;
+    private Button botaoComentarios;
 
     @Nullable
     @Override
@@ -34,6 +32,16 @@ public class EnvioFragment extends Fragment {
             public void onClick(View v) {
                 Log.d("teste", "teste");
                 Intent intent = new Intent(getActivity(), FotoDetalhes.class);
+                startActivity(intent);
+            }
+        });
+
+        botaoComentarios = (Button)rootView.findViewById(R.id.btnComentario);
+        botaoComentarios.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), TelaComentario.class);
                 startActivity(intent);
             }
         });

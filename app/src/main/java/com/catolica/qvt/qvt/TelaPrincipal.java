@@ -37,10 +37,6 @@ public class TelaPrincipal extends AppCompatActivity {
 
         // seleciona fragmento default
         selectFragment(navigation.getMenu().getItem(0));
-
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//        getSupportActionBar().setIcon(R.drawable.ic_question_mark);
     }
 
     protected void selectFragment(MenuItem item) {
