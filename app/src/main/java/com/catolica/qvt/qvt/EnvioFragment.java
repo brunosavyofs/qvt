@@ -4,7 +4,9 @@ import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,7 +33,6 @@ public class EnvioFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                Log.d("teste", "teste");
                 Intent intent = new Intent(getActivity(), FotoDetalhes.class);
                 startActivity(intent);
             }
@@ -47,7 +48,7 @@ public class EnvioFragment extends Fragment {
             }
         });
 
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("QVT");
+        //((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("QVT");
 
         return rootView;
     }

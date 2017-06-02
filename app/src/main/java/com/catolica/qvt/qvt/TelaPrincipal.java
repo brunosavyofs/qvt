@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.Toolbar;
@@ -29,11 +30,19 @@ public class TelaPrincipal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
+        //altera a cor do titulo do topo
+        android.support.v7.widget.Toolbar actionBarToolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.action_bar);
+        if (actionBarToolbar != null) {
+            actionBarToolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorQVT));
+        }
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
 
         // adiciona listener ao navigationView
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        //navigation.setDrawingCacheBackgroundColor(ContextCompat.getColor(this, R.color.colorQVT));
+        //navigation.setBackgroundResource(R.color.colorQVT);
 
         // seleciona fragmento default
         selectFragment(navigation.getMenu().getItem(0));

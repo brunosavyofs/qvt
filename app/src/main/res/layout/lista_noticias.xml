@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="titulo"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorQVT"
         android:textSize="14sp" />
 
     <TextView

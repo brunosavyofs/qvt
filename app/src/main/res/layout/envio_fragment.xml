@@ -6,93 +6,122 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        android:fillViewport="true"
-        android:padding="@dimen/activity_horizontal_margin"
-        android:textAlignment="center">
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/btnFoto"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:background="@drawable/border"
-                android:padding="16dp"
-                android:text="FOTO"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="18sp" />
+                android:layout_height="match_parent"
+                android:background="@color/colorQVT"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="6dp">
 
-            <Button
-                android:id="@+id/btnVideo"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_weight="0"
-                android:background="@color/colorPrimary"
-                android:padding="16dp"
-                android:text="VÍDEO"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@mipmap/ic_launcher" />
 
-            <Button
-                android:id="@+id/btnGaleria"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_weight="0"
-                android:background="@color/colorPrimary"
-                android:padding="16dp"
-                android:text="GALERIA"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Q V T"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="36sp" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btnSugerirPauta"
-                style="@style/Widget.AppCompat.Button.Colored"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_weight="0"
-                android:background="@color/colorPrimary"
-                android:padding="16dp"
-                android:text="Sugerir Pauta"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp" />
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin">
 
-            <Button
-                android:id="@+id/btnComentario"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_weight="0"
-                android:background="@color/colorPrimary"
-                android:padding="16dp"
-                android:text="Comentário"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp" />
+                <Button
+                    android:id="@+id/btnFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/border"
+                    android:padding="16dp"
+                    android:text="FOTO"
+                    android:textColor="@color/colorQVT"
+                    android:textSize="18sp" />
 
-            <Button
-                android:id="@+id/btnEnquete"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_weight="0"
-                android:background="@color/colorPrimary"
-                android:padding="16dp"
-                android:text="Enquete"
-                android:textColor="@color/colorAccent"
-                android:textSize="18sp" />
+                <Button
+                    android:id="@+id/btnVideo"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:padding="16dp"
+                    android:text="VÍDEO"
+                    android:textColor="@color/colorQVT"
+                    android:background="@drawable/border"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnGaleria"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:padding="16dp"
+                    android:text="GALERIA"
+                    android:textColor="@color/colorQVT"
+                    android:background="@drawable/border"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnSugerirPauta"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:padding="16dp"
+                    android:text="Sugerir Pauta"
+                    android:textColor="@color/colorQVT"
+                    android:background="@drawable/border"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnComentario"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:padding="16dp"
+                    android:text="Comentário"
+                    android:textColor="@color/colorQVT"
+                    android:background="@drawable/border"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnEnquete"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:padding="16dp"
+                    android:text="Enquete"
+                    android:textColor="@color/colorQVT"
+                    android:background="@drawable/border"
+                    android:textSize="18sp" />
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

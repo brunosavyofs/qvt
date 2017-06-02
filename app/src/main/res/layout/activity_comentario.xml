@@ -13,13 +13,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/activity_horizontal_margin"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorQVT"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:padding="6dp">
@@ -40,121 +39,128 @@
                     android:textColor="@color/colorAccent"
                     android:textSize="36sp" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/checkBox"
+                        android:layout_weight="1"
+                        android:text="Autoriza identificação"
+                        android:textColor="@color/colorQVT" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:textColor="@color/colorQVT"
+                        android:buttonTint="@color/colorQVT" />
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_below="@+id/checkBox"
-                    android:layout_weight="1"
-                    android:text="Autoriza identificação"
-                    android:textColor="@color/colorPrimary" />
+                    android:text="Assunto:"
+                    android:textColor="@color/colorQVT" />
 
-                <CheckBox
-                    android:id="@+id/checkBox2"
+                <EditText
+                    android:id="@+id/editText3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textColor="@color/colorPrimary" />
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2"
+                    android:background="@drawable/border"
+                    android:inputType="textPersonName" />
 
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/checkBox"
-                android:text="Assunto:"
-                android:textColor="@color/colorPrimary" />
-
-            <EditText
-                android:id="@+id/editText3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView2"
-                android:background="@drawable/border"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText3"
-                android:layout_marginTop="12dp"
-                android:text="Comentário:"
-                android:textColor="@color/colorPrimary" />
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView4"
-                android:background="@drawable/border"
-                android:inputType="textMultiLine" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/editText1"
-                android:layout_marginTop="10dp"
-                android:text="Região:"
-                android:textColor="@color/colorPrimary" />
-
-            <Spinner
-                android:id="@+id/spinner1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView5"
-                android:entries="@array/regioes" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/enviar"
-                    style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/checkBox"
-                    android:layout_alignTop="@+id/cancelar"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="0"
-                    android:background="@color/colorPrimary"
-                    android:text="Enviar"
-                    android:textColor="@color/colorAccent" />
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText3"
+                    android:layout_marginTop="12dp"
+                    android:text="Comentário:"
+                    android:textColor="@color/colorQVT" />
 
-                <Button
-                    android:id="@+id/cancelar"
-                    style="@style/Widget.AppCompat.Button.Colored"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView4"
+                    android:background="@drawable/border"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignEnd="@+id/imageButton4"
-                    android:layout_below="@+id/editText8"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_weight="0"
-                    android:background="@color/colorPrimary"
-                    android:text="Cancelar"
-                    android:textColor="@color/colorAccent" />
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/editText1"
+                    android:layout_marginTop="10dp"
+                    android:text="Região:"
+                    android:textColor="@color/colorQVT" />
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView5"
+                    android:entries="@array/regioes"
+                    android:background="@drawable/border"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/enviar"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/checkBox"
+                        android:layout_alignTop="@+id/cancelar"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="0"
+                        android:background="@color/colorQVT"
+                        android:text="Enviar"
+                        android:textColor="@color/colorAccent" />
+
+                    <Button
+                        android:id="@+id/cancelar"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/imageButton4"
+                        android:layout_below="@+id/editText8"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="0"
+                        android:background="@color/colorQVT"
+                        android:text="Cancelar"
+                        android:textColor="@color/colorAccent" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </RelativeLayout>
