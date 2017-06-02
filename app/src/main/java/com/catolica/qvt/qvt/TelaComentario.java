@@ -19,7 +19,9 @@ public class TelaComentario extends AppCompatActivity {
         //altera a cor do titulo do topo
         Toolbar actionBarToolbar = (Toolbar)findViewById(R.id.action_bar);
         if (actionBarToolbar != null) {
+            //altera a cor do titulo do topo
             actionBarToolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorQVT));
+            actionBarToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         }
 
         //getSupportActionBar().setDisplayShowHomeEnabled(true);

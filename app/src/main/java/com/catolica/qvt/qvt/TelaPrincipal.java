@@ -34,15 +34,13 @@ public class TelaPrincipal extends AppCompatActivity {
         android.support.v7.widget.Toolbar actionBarToolbar = (android.support.v7.widget.Toolbar)findViewById(R.id.action_bar);
         if (actionBarToolbar != null) {
             actionBarToolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorQVT));
+            actionBarToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         }
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
 
         // adiciona listener ao navigationView
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-        //navigation.setDrawingCacheBackgroundColor(ContextCompat.getColor(this, R.color.colorQVT));
-        //navigation.setBackgroundResource(R.color.colorQVT);
 
         // seleciona fragmento default
         selectFragment(navigation.getMenu().getItem(0));

@@ -20,6 +20,7 @@ public class FotoDetalhes extends AppCompatActivity {
         Toolbar actionBarToolbar = (Toolbar)findViewById(R.id.action_bar);
         if (actionBarToolbar != null) {
             actionBarToolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorQVT));
+            actionBarToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         }
 
         botaoCancelar = (Button)findViewById(R.id.cancelar);

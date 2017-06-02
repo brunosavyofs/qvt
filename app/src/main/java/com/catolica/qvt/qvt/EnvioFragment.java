@@ -47,9 +47,6 @@ public class EnvioFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-        //((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("QVT");
-
         return rootView;
     }
 
