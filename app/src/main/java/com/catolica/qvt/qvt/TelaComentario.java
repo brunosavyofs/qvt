@@ -23,10 +23,9 @@ public class TelaComentario extends AppCompatActivity {
             actionBarToolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorQVT));
             actionBarToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         }
-
-        //getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //mudar a seta
-        //getSupportActionBar().setHomeAsUpIndicator(R.mipmap.ic_launcher);
+        //altera cor da seta
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_seta);
 
 
         botaoCancelar = (Button)findViewById(R.id.cancelar);

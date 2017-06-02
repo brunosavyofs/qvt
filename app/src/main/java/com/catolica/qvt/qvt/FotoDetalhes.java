@@ -22,6 +22,9 @@ public class FotoDetalhes extends AppCompatActivity {
             actionBarToolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.colorQVT));
             actionBarToolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
         }
+        //altera cor da seta
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_seta);
 
         botaoCancelar = (Button)findViewById(R.id.cancelar);
         botaoCancelar.setOnClickListener(new View.OnClickListener(){
